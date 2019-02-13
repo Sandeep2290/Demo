@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="-1" guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test name="chromeTest(failed)" parallel="tests">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="Script.UsersFunctionality">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="afterMethod"/>
+          <include name="userbuttonTest"/>
+        </methods>
+      </class> <!-- Script.UsersFunctionality -->
+    </classes>
+  </test> <!-- chromeTest(failed) -->
+  <test name="firefoxtestTest(failed)" parallel="tests">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="Script.UsersFunctionality">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="afterMethod"/>
+          <include name="userbuttonTest"/>
+        </methods>
+      </class> <!-- Script.UsersFunctionality -->
+    </classes>
+  </test> <!-- firefoxtestTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->
